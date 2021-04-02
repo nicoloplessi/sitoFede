@@ -855,8 +855,32 @@ textarea.form-control {
   border-radius: 3px;
 }
 
+#galleria{
+  text-align: center;
+  width: 100%;
+}
 
+.immagine{
+  display: inline-block;
+  width: 22%;
+  margin: 10px 1%;
+}
 
+.preview{
+  width: 100%;
+}
 
+@media (max-width: 480px) {
+  background: red;
+}
 
-
+@media (max-width: 240px) {
+  .immagine{
+      width: 98%;
+  }
+  }
+  @media (max-width: 480px) and (min-width: 240px){
+  .immagine{
+      width: 47%;
+  }
+  }
