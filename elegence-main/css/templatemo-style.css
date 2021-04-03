@@ -338,7 +338,7 @@ a#logo {
   content:'';
   display:block;
   height: 2px;
-  background:#fff;
+  background:rgba(255, 255, 255, 0);
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;
   -webkit-transform:scale(0);
@@ -883,4 +883,25 @@ textarea.form-control {
   .immagine{
       width: 47%;
   }
+  
+  body {
+    background: #ffffff00;
   }
+  
+  .navbar .nav-item:not(:last-child) {
+    margin-right: 35px;
+  }
+  
+  .dropdown-toggle::after {
+     transition: transform 0.15s linear; 
+  }
+  
+  .show.dropdown .dropdown-toggle::after {
+    transform: translateY(3px);
+  }
+  
+  .dropdown-menu {
+    margin-top: 0;
+  }
+  
+}
